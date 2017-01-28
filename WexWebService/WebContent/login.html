@@ -1,0 +1,68 @@
+<!DOCTYPE html >
+<html>
+<head>
+<title>100%正品gogogo - 登录</title>
+<meta name="keywords" content="">
+<meta name="description" content="">
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0 , maximum-scale=1.0, user-scalable=0">
+
+<link rel="stylesheet" type="text/css" href="bootstrap/css/bootstrap.min.css">
+
+<link rel="stylesheet" type="text/css" href="css/apply.css">
+<link rel="stylesheet" type="text/css" href="css/share.css">
+<link rel="stylesheet" type="text/css" href="css/public.css">
+
+
+</head>
+
+<body>
+<div id="wrap" class="clearfix overflow mg-auto">    
+  <div class="i-head mg-auto overflow area border-bom">
+     <h1>100%正品gogogo</h1>
+  </div>
+    
+<br>
+  <div class="alert alert-danger alert-dismissable fade in" id="alertDg" style="display:none;">
+  	<button type="button" class="close" onclick="$('#alertDg').hide();">&times;</button>
+  	<span id="alertMsg"></span>
+  </div>
+  <!--焦点图开始-->
+<div class="swiper-container overflow" style="height: 250px;">
+
+  <div class="i-login mg-auto overflow">
+  <form id="auth" name="auth" action="loginAction" method="post">	
+  
+    <p class="clearfix">
+     <b class="i-sou-seek">用户名</b>
+     <input id="userId" type="text" class="txtInfo" name="userId"  value="">
+    </p>
+     <p class="clearfix">
+     <b class="i-sou-seek">密码</b>
+     <input id="password" type="password" class="txtInfo" name="password"  value="">
+    </p>
+   	<span style="float:right; padding-top:5px; padding-right:2px;"><a href="Javascript:showAlert('请联系系统管理员')">忘记密码?</a></span>
+
+    <p class="clearfix">
+	<button type="button" class="btn btn-danger btn-block" onclick="jsonAjaxPost();">登录</button>
+
+    </p>
+
+    </form>    
+  </div> 
+ 
+</div>  
+ 
+ <div style="height: 300px;"></div>
+
+</div>
+<script type="text/javascript" src="js/jquery.min.js"></script>
+<script type="text/javascript" src="js/jquery.cookie.js"></script>
+<script type="text/javascript" src="bootstrap/js/bootstrap.min.js"></script>
+
+<script type="text/javascript" src="js/function.js"></script>
+<script type="text/javascript" src="js/common.js"></script>
+<script type="text/javascript" src="js/login.js"></script>
+<script type="text/javascript" src="js/md5.js"></script>
+</body> 
+</html>

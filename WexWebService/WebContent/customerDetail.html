@@ -1,0 +1,89 @@
+<!DOCTYPE html >
+<html>
+<head>
+<title>100%正品gogogo</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0 , maximum-scale=1.0, user-scalable=0">
+
+<link rel="stylesheet" type="text/css" href="bootstrap/css/bootstrap.min.css">
+
+<link rel="stylesheet" type="text/css" href="css/apply.css">
+<link rel="stylesheet" type="text/css" href="css/share.css">
+<link rel="stylesheet" type="text/css" href="css/public.css">
+
+</head>
+
+<body>
+<div id="wrap" class="clearfix overflow mg-auto"> 
+   <div class="apply-nav overflow mg-auto area">
+        <div class="overflow clearfix apply-top border-bom">
+            <a href="index.html" class="apply-return">返回</a>
+            <h2>客户</h2>
+            <a href="Javascript:logout();" class="apply-sou">退出</a>
+            <a href="#" class="apply-pup">弹出</a>
+        </div>
+        <div class="i-icon mg-auto overflow area clearfix" id="apply-pup-icon">
+             <ul class="clearfix">
+		       	   <li><a href="buy.html" class="i-icon-tao"><img src="img/buy.png"></a></li>
+		           <li><a href="product.html" class="i-icon-game"><img src="img/product.png"></a></li>
+		           <li><a href="customer.html" class="i-icon-bizhi"><img src="img/customer.png"></a></li>
+		           <li><a href="report.html" class="i-icon-zhuan"><img src="img/report.png"></a></li>
+		     </ul>
+        </div>
+   </div> 
+   <div class="crumbs">
+   	<a href="index.html">首页</a> > <a href="customer.html">客户</a> > 编辑
+   </div>
+
+  <div class="alert alert-danger alert-dismissable fade in" id="alertDg" style="display:none;">
+  	<button type="button" class="close" onclick="$('#alertDg').hide();">&times;</button>
+  	<span id="alertMsg"></span>
+  </div>
+
+<div class="clearfix swiper-container mg-auto overflow">
+ <ul class="clearfix detail-list">        
+    <li>
+	 <b class="title">微信号</b>
+     <input id="weixin" type="text" class="txtInfo" name="weixin"  value="" placeholder="" >          
+	 </li> 
+    <li>
+	 <b class="title">姓名</b>
+     <input id="name" type="text" class="txtInfo" name="name"  value="" placeholder="" >          
+	 </li> 	 
+    <li>
+	 <b class="title">电话</b>
+     <input id="mobile" type="text" class="txtInfo" name="mobile"  value="" placeholder="" OnKeyUp="value=value.replace(/[^\d]/ig,'')">          
+	 </li> 		 
+    <li>
+	 <b class="title">地址</b>
+     <input id="address" type="text" class="txtInfo" name="address"  value="" placeholder="" >          
+	 </li> 	 
+ 
+ 	<li>
+	 <button type="button" class="btn btn-danger btn-block submitBtn" id="btnSubmit" onclick="edit();">提交</button>
+	 </li>	 
+ </ul>
+</div>   
+   <div style="height: 300px;"></div>
+ 
+ 
+</div>
+
+<script type="text/javascript" src="js/jquery.min.js"></script>
+<script type="text/javascript" src="js/jquery.cookie.js"></script>
+<script type="text/javascript" src="bootstrap/js/bootstrap.min.js"></script>
+
+<script type="text/javascript" src="js/function.js"></script>
+<script type="text/javascript" src="js/common.js"></script>
+<script type="text/javascript" src="js/label.js"></script>
+<script type="text/javascript" src="js/customerDetail.js"></script>
+
+</body> 
+
+<script type="text/javascript" src="js/com.js"></script> 
+<script type="text/javascript">
+window.onload = function(){
+
+}; 	
+</script>
+</html>

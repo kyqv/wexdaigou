@@ -1,0 +1,57 @@
+   <!-- Alert Modal -->
+   <div class="modal fade" id="wexDgAlert" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+			<div class="modal-dialog">
+				<div class="modal-content">
+					<div class="modal-header">
+						<button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+						<h4 class="modal-title" id="myModalLabel"><span class="glyphicon glyphicon-exclamation-sign"></span> 提醒</h4>
+					</div>
+					<div class="modal-body">
+	 
+					</div>
+					<div class="modal-footer">
+						<button type="button" class="btn btn-default" style="width:75px" onclick="" id="btnOk"> 确定</button>
+					</div>
+				</div><!-- /.modal-content -->
+			</div><!-- /.modal-dialog -->
+	</div><!-- /.modal -->
+	
+	<!-- Confirm Modal -->
+	<div class="modal fade" id="wexDgConfirm" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+			<div class="modal-dialog">
+				<div class="modal-content">
+					<div class="modal-header">
+						<button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+						<h4 class="modal-title" id="myModalLabel"><span class="glyphicon glyphicon-exclamation-sign"></span> 确认</h4>
+					</div>
+					<div class="modal-body">
+	 
+					</div>
+					<div class="modal-footer">
+						<button type="button" class="btn btn-default" data-dismiss="modal" style="width:75px"><span class="glyphicon glyphicon-remove"></span> 取消</button>
+						<button type="button" class="btn btn-danger" style="width:75px" onclick="" id="btnYes"><span class="glyphicon glyphicon-ok"></span> 确认</button>
+					</div>
+				</div><!-- /.modal-content -->
+			</div><!-- /.modal-dialog -->
+	</div><!-- /.modal -->
+
+	
+	<!-- Lookup Modal -->
+	<div class="modal fade" id="wexDgLookup" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+			<div class="modal-dialog">
+				<div class="modal-content">
+					<div class="modal-header">
+						<button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+						<h4 class="modal-title" id="myModalLabel"><span class="glyphicon glyphicon-th-list"></span> Lookup List</h4>
+					</div>
+					<div class="modal-body">
+			 		<table class="table table-hover" id="lookupTable">
+			 		</table>
+					</div>
+					<div class="modal-footer">
+						<button type="button" class="btn btn-default" data-dismiss="modal" style="width:85px"><span class="glyphicon glyphicon-floppy-remove"></span> <s:text name="global.action.cancel"/></button>
+						<button type="button" class="btn btn-danger" style="width:85px" onclick="btnLookupSave()" id="btnYes"><span class="glyphicon glyphicon-floppy-saved"></span> <s:text name="global.action.save"/></button>
+					</div>
+				</div><!-- /.modal-content -->
+			</div><!-- /.modal-dialog -->
+	</div><!-- /.modal -->

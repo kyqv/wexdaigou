@@ -1,0 +1,28 @@
+@charset "gb2312";
+/* Ê×Ò³¶¥²¿ */
+.i-head{ height:5em; background:#1A7EED; border-top:0.25em #69BEF4 solid; border-radius:0 0 0.1em 0.1em;}.i-head h1{ background:url(../img/logo.png) 50% 50% no-repeat; background-size:contain; text-indent:-500px; height:1.8em; width:60%; margin:0em 0 0 0.2em;}
+.i-sou{ width:98%; margin:1em auto;}.i-sou p{ float:left; width:81%; position:relative;border:1px #D3D3D3 solid; border-radius:0.3em; background:#FFF;}.i-sou .i-sou-seek{ display:block; float:left; height:2.6em; width:12%;background:url(../img/sou.png) 50% 49% no-repeat; background-size:auto 50%;}.i-sou .txtInfo{ width:74%; height:1.8em; font-size:1.3em; line-height:2em;}.i-sou .souBtn{padding-top:2px; padding-right:10px; border:1px #D3D3D3 solid; border-radius:0.2em; background:#FFF; text-align:center; float:right; width:18%; text-indent:0.9em;display:block;line-height:1.85em; height:2.1em; font-size:1.3em ;}/*.i-sou .souBtn{margin-left:10px; margin-top:15px;padding-left:15px; padding-top:10px; width:18%;  background:#FFF; text-align:center;font:400 1.2em/1.2em ;border:1px #D3D3D3 solid; border-radius:0.3em; }*/.i-sou .clear-txt{ position:absolute; right:0; top:0; height:2.6em; width:3em; background:url(../img/sou-close.png) 50% 50% no-repeat; background-size:auto 50%;}
+ 
+.i-login{ width:98%; margin:1em auto;}.i-login p{margin-top:10px; float:left; width:100%; position:relative;border:1px #D3D3D3 solid; border-radius:0.3em; background:#FFF;}.i-login .i-sou-seek{text-align:left; color:rgb(4,44,88); padding-left:10px; padding-top:8px; display:block; float:left; height:2.6em; width:18%; /*background:url(../img/sou.png) 50% 49% no-repeat; background-size:auto 50%;*/}.i-login .txtInfo{ width:82%; height:2em; font-size:1.1em; line-height:2em; padding-top:7px;}.i-login .souBtn{border:1px #65BAF1 solid;border-radius:0.2em; float:left; width:18%;font-size:1.5em; text-indent:0.9em;display:block;line-height:1.85em; height:1.85em; font-family:; color:#999999;}.i-login .clear-txt{ position:absolute; right:0; top:0; height:2.6em; width:3em; background:url(../img/sou-close.png) 50% 50% no-repeat; background-size:auto 50%;}
+
+  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

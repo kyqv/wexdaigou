@@ -1,0 +1,110 @@
+<!DOCTYPE html >
+<html>
+<head>
+<title>100%正品gogogo</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0 , maximum-scale=1.0, user-scalable=0">
+
+<link rel="stylesheet" type="text/css" href="bootstrap/css/bootstrap.min.css">
+
+<link rel="stylesheet" type="text/css" href="css/apply.css">
+<link rel="stylesheet" type="text/css" href="css/share.css">
+<link rel="stylesheet" type="text/css" href="css/public.css">
+
+</head>
+
+<body>
+<div id="wrap" class="clearfix overflow mg-auto"> 
+   <div class="apply-nav overflow mg-auto area">
+        <div class="overflow clearfix apply-top border-bom">
+            <a href="index.html" class="apply-return">返回</a>
+            <h2>报表</h2>
+            <a href="Javascript:logout();" class="apply-sou">退出</a>
+            <a href="#" class="apply-pup">弹出</a>
+        </div>
+        <div class="i-icon mg-auto overflow area clearfix" id="apply-pup-icon">
+             <ul class="clearfix">
+		       	   <li><a href="buy.html" class="i-icon-tao"><img src="img/buy.png"></a></li>
+		           <li><a href="product.html" class="i-icon-game"><img src="img/product.png"></a></li>
+		           <li><a href="customer.html" class="i-icon-bizhi"><img src="img/customer.png"></a></li>
+		           <li><a href="report.html" class="i-icon-zhuan"><img src="img/report.png"></a></li>
+		     </ul>
+        </div>
+
+   		<div class="wallpaper-nav clearfix area">
+       		<div class="wallpaper-inner clearfix">
+         	<a href="report.html" id="btnCat1" class="wallpaper-hover" disabled>全部</a><a id="btnCat2" href="category.html" >分类</a>
+       		</div>
+   		</div>
+   </div> 
+   
+<div class="clearfix mg-auto overflow item-panel">
+ <ul class="clearfix item-list" id="buylist">        
+	<li class="line"></li>
+	<li class="more">
+	<a href="report.html" id="hrefCat1">年份</a> |
+	<a href="reportMonth.html" id="hrefCat2">月份</a> |
+	<a href="reportProduct.html" id="hrefCat3">商品</a> |
+	<span class="label label-primary active-text">客户</span> 
+	</li>
+	<li class="line"></li> 
+ </ul>
+</div>   
+   
+  <div class="alert alert-danger alert-dismissable fade in" id="alertDg" style="display:none;">
+  	<button type="button" class="close" onclick="$('#alertDg').hide();">&times;</button>
+  	<span id="alertMsg"></span>
+  </div>
+ 
+ <div class="i-sou mg-auto overflow" style="text-align:center;">
+	<div class="btn-group" >
+  		<button type="button" id="btnOrder1" class="btn btn-default" onclick="reOrder('cnt desc ',1);">按数量 <span class="glyphicon glyphicon-collapse-down"></span></button>
+  		<button type="button" id="btnOrder2" class="btn btn-default" onclick="reOrder('buyPrice desc ',2);">按成本 <span class="glyphicon glyphicon-collapse-down"></span></button>
+  		<button type="button" id="btnOrder3" class="btn btn-default" onclick="reOrder('sellPrice desc ',3);">按销售 <span class="glyphicon glyphicon-collapse-down"></span></button>
+  		<button type="button" id="btnOrder4" class="btn btn-default" onclick="reOrder('gain desc ',4);" disabled>按盈利 <span class="glyphicon glyphicon-collapse-down"></span></button>
+	</div>
+ </div> 
+
+<div class="clearfix mg-auto overflow item-panel">
+
+ <ul class="clearfix item-list" id="cusList">        
+    <li class="head" id="cus-item">
+	   <div class="two main bottom-border">
+	   <div class="col1" id=""><span class="glyphicon glyphicon-phone"></span> {customer}</div>
+	   <div class="col2" id=""><span class="glyphicon glyphicon-stats"></span> {productCnt}</div>
+	   </div>
+	   <div class="two remark bottom-dashed">
+	   <div class="col1" id="">总成本</div><div class="col2" id="">{buyPrice}</div>
+	   </div>
+	   <div class="two remark bottom-dashed">
+	   <div class="col1" id="">总销售</div><div class="col2" id="">{sellPrice}</div>
+	   </div>	  
+	   <div class="two main active">
+	   <div class="col1" id="">总盈利</div><div class="col2" id="">{gain}</div>
+	   </div>	
+	   	    
+	 </li> 
+	 <li class="line"></li>
+     <li class="line"></li>
+	 <li class="more" id="more">
+	 <a class="clearfix morebtn" href="#" onclick="loadMore();">加载更多</a>
+	 </li>
+ </ul>
+</div>   
+ 
+ 
+</div>
+<script type="text/javascript" src="js/jquery.min.js"></script>
+<script type="text/javascript" src="js/jquery.cookie.js"></script>
+<script type="text/javascript" src="bootstrap/js/bootstrap.min.js"></script>
+
+<script type="text/javascript" src="js/function.js"></script>
+<script type="text/javascript" src="js/common.js"></script>
+<script type="text/javascript" src="js/label.js" charset="utf-8"></script>
+<script type="text/javascript" src="js/reportCustomer.js"></script>
+
+</body> 
+
+<script type="text/javascript" src="js/com.js"></script> 
+ 
+</html>

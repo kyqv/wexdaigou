@@ -1,0 +1,118 @@
+<!DOCTYPE html >
+<html>
+<head>
+<title>100%正品gogogo</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0 , maximum-scale=1.0, user-scalable=0">
+
+<link rel="stylesheet" type="text/css" href="bootstrap/css/bootstrap.min.css">
+
+<link rel="stylesheet" type="text/css" href="css/apply.css">
+<link rel="stylesheet" type="text/css" href="css/share.css">
+<link rel="stylesheet" type="text/css" href="css/public.css">
+ 
+</head>
+
+<body>
+ 
+
+<div id="wrap" class="clearfix overflow mg-auto"> 
+   <div class="apply-nav overflow mg-auto area">
+        <div class="overflow clearfix apply-top border-bom">
+            <a href="index.html" class="apply-return">返回</a>
+            <h2>采购</h2>
+            <a href="Javascript:logout();" class="apply-sou">退出</a>
+            <a href="#" class="apply-pup">弹出</a>
+        </div>
+        <div class="i-icon mg-auto overflow area clearfix" id="apply-pup-icon">
+             <ul class="clearfix">
+		       	   <li><a href="buy.html" class="i-icon-tao"><img src="img/buy.png"></a></li>
+		           <li><a href="product.html" class="i-icon-game"><img src="img/product.png"></a></li>
+		           <li><a href="customer.html" class="i-icon-bizhi"><img src="img/customer.png"></a></li>
+		           <li><a href="report.html" class="i-icon-zhuan"><img src="img/report.png"></a></li>
+		     </ul>
+        </div>
+        
+        <div class="nav-tab clearfix area">
+           <div class="nav-tab-inner clearfix overflow">
+           <a href="Javascript:savePic();" class="nav-hover">保存为图片</a>
+        </div>        
+   </div> 
+   
+     
+   <div class="crumbs">
+   	<a href="index.html">首页</a> > <a href="buy.html">采购</a> > 清单
+   </div>
+  
+  <div class="alert alert-danger alert-dismissable fade in" id="alertDg" style="display:none;">
+  	<button type="button" class="close" onclick="$('#alertDg').hide();">&times;</button>
+  	<span id="alertMsg"></span>
+  </div>
+   
+<div id="myBuylist">
+
+<div class="clearfix mg-auto overflow item-panel">
+
+ <ul class="clearfix item-list" id="">        
+    <li class="head" id="buylist">
+	   <div class="two main bottom-dashed">
+	   <div class="col1" id="cusName"><span class="glyphicon glyphicon-shopping-cart"></span> {buyDate}</div><div class="col2 active" id="mobile">{price}</div>
+	   </div>    
+	  <div class="one remark">
+	  <button type="button" class="btn btn-danger btn-xs" onclick="updateHkdEx();"><span class="glyphicon glyphicon-refresh"></span> 港币汇率: <span id="hkdEx"></span></button>
+	  </div>  
+	 </li> 
+	 <li class="line"></li>
+ </ul>
+</div>   
+
+<div class="i-tab-title">    
+ <h2>采购商品清单</h2>  
+</div>
+
+<div class="clearfix mg-auto overflow item-panel">
+
+ <ul class="clearfix item-list">       
+    <li class="list" style="padding-left:0px; padding-right:0px;" id="itemList">
+      <div id="header" class="two main bottom-border">
+	   <div class="col1" id="">
+	   <span class="glyphicon glyphicon-gift"></span> 商品名称</div><div class="col2 active" id="">数量</div>
+	   </div>
+       <div id="category" class="one main bottom-border">{category}</div>
+       <div id="customer" class="one reamrk">{customer}</div>
+	   <div id="product" class="two remark">
+	   <div class="col1" id="cusName">{prodName}</div><div class="col2 active" id="price">{cnt}</div>
+	   </div>     
+	   <div id="action" class="one reamrk bottom-border">
+	   	  <b class="title">买入价(单价,输港币): </b>
+	   	   <input id="buyPrice-{buyProdId}" type="text" class="txtInfo" name="buyPrice-{buyProdId}" onchange="chgBuyPrice('{buyProdId}');" value="{buyPrice}" placeholder="" OnKeyUp="value=value.replace(/[^\d]/ig,'')"> 
+     	   <button type="button" class="btn btn-success btn-xs" onclick="buy('{buyProdId}')">完成</button>
+     	   <button type="button" class="btn btn-danger btn-xs" onclick="buyFail('{buyProdId}')">缺货</button>
+	   </div>
+	   <div id="vline" class="one bottom-border"></div>
+	 </li> 
+	 <li class="line"></li>
+     <li class="line"></li>
+ 
+ </ul>
+</div>
+ 
+</div>
+</div>
+
+<script type="text/javascript" src="js/jquery.min.js"></script>
+<script type="text/javascript" src="js/jquery.cookie.js"></script>
+<script type="text/javascript" src="bootstrap/js/bootstrap.min.js"></script>
+<script type="text/javascript" src="js/html2canvas.js"></script>
+ 
+
+<script type="text/javascript" src="js/function.js"></script>
+<script type="text/javascript" src="js/common.js"></script>
+<script type="text/javascript" src="js/label.js" charset="utf-8"></script>
+<script type="text/javascript" src="js/hkd.js"></script>
+<script type="text/javascript" src="js/buylist.js"></script>
+</body> 
+
+<script type="text/javascript" src="js/com.js"></script> 
+ 
+</html>

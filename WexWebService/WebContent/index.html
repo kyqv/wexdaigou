@@ -1,0 +1,152 @@
+<!DOCTYPE html >
+<html>
+<head>
+<title>100%正品gogogo</title>
+<link rel="shortcut icon" href="img/favicon.ico" >
+<meta name="keywords" content="">
+<meta name="description" content="">
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0 , maximum-scale=1.0, user-scalable=0">
+
+<link rel="stylesheet" type="text/css" href="bootstrap/css/bootstrap.min.css">
+
+<link rel="stylesheet" type="text/css" href="css/apply.css">
+<link rel="stylesheet" type="text/css" href="css/share.css">
+<link rel="stylesheet" type="text/css" href="css/public.css">
+<link rel="stylesheet" type="text/css" href="css/slide.css">
+
+<script type="text/javascript" src="js/jquery.min.js"></script>
+<script type="text/javascript" src="js/jquery.cookie.js"></script>
+<script type="text/javascript" src="bootstrap/js/bootstrap.min.js"></script>
+<script type="text/javascript" src="js/swiper-2.1.min.js"></script>
+<script type="text/javascript" src="js/lazyload.js"></script>
+
+
+
+<script type="text/javascript" charset="utf-8">   
+        $(function() {   
+            $("img").lazyload({
+				effect      : "fadeIn"
+			});
+        });   
+
+ window.onload = function(){
+	var mySwiper = new Swiper('.swiper-container',{   
+		pagination: '.sl-pagination',
+		loop:true,
+		autoplay:3000,	
+		paginationClickable: true,
+		onSlideChangeStart: function(){
+		   //回调函数
+		}
+	}); 
+	//cTab("#tab1","#con1");  
+	//cTab("#tab2","#con2");  
+};
+</script>
+</head>
+
+<body>
+<div id="wrap" class="clearfix overflow mg-auto">    
+  <div class="i-head mg-auto overflow area border-bom">
+     <h1>100%正品gogogo</h1>
+  </div>
+    <div class="i-icon mg-auto overflow area clearfix">
+     <ul class="clearfix">
+		       	   <li><a href="buy.html" class="i-icon-tao">
+		       	   <img src="img/buy.png">
+		       	   </a></li>
+		           <li><a href="product.html" class="i-icon-game"><img src="img/product.png"></a></li>
+		           <li><a href="customer.html" class="i-icon-bizhi"><img src="img/customer.png"></a></li>
+		           <li><a href="report.html" class="i-icon-zhuan"><img src="img/report.png"></a></li>
+		     </ul>
+  </div>
+
+  <!--焦点图开始-->
+ <div class="swiper-container overflow" style="height: 30px;">
+
+<div class="swiper-wrapper" id="swiper-wrapper">
+
+<div class="swiper-slide my-slide" style="background:rgb(11,170,238);">
+<span class="glyphicon glyphicon-shopping-cart my-slide-icon"></span><br>便捷下单,一键生成采购清单
+<br>买买买!
+</div>
+<div class="swiper-slide my-slide" style="background:rgb(208,70,224);">
+<span class="glyphicon glyphicon-gift my-slide-icon"></span><br>管理商品,成本售价尽在掌握
+<br>多多多!
+</div>
+<div class="swiper-slide my-slide" style="background:rgb(238,82,119);">
+<span class="glyphicon glyphicon-phone my-slide-icon"></span><br>招揽客户,微信电话随便联系
+<br>来来来!
+</div>
+<div class="swiper-slide my-slide" style="background:rgb(251,160,11);">
+<span class="glyphicon glyphicon-align-justify my-slide-icon"></span><br>查看报表,大数据帮你精准营销
+<br>赚赚赚!
+</div>
+</div> 
+
+<div class="sl-pagination"></div> 
+
+</div>  <script type="text/javascript">        
+     var newSlideSize = function slideSize(){
+        var w = Math.ceil($(".swiper-container").width()/1.96);
+        $(".swiper-container,.swiper-wrapper,.swiper-slide").height(w); 
+     };
+     newSlideSize();
+     $(window).resize(function(){
+       newSlideSize();
+     });
+  </script> 
+
+<br>
+  <div class="alert alert-danger alert-dismissable fade in" id="alertDg" style="display:none;">
+  	<button type="button" class="close" onclick="$('#alertDg').hide();">&times;</button>
+  	<span id="alertMsg"></span>
+  </div>
+ 
+<div class="clearfix mg-auto overflow item-panel">
+
+ <ul class="clearfix item-list" id="dashboard">        
+ 	<li class="line"></li>
+    <li class="head" id="">
+	   <div class="two main bottom-border">
+	   <div class="col1" id="">数据类型</div><div class="col2" id="">数量</div>
+	   </div>
+ 	  <div class="two remark bottom-dashed">
+	   <div class="col1" id="">总采购次数</div><div class="col2 active" id="buylistCnt"></div>
+	   </div>     
+  	  <div class="two remark bottom-dashed">
+	   <div class="col1" id="">总订单数</div><div class="col2 active" id="buyorderCnt"></div>
+	   </div>     
+ 	  <div class="two remark bottom-dashed">
+	   <div class="col1" id="">总商品数</div><div class="col2 active" id="productCnt"></div>
+	   </div>     
+ 	  <div class="two remark bottom-dashed">
+	   <div class="col1" id="">总客户数</div><div class="col2 active" id="customerCnt"></div>
+	   </div>     
+
+	 </li> 
+	<li class="line"></li>
+	
+ </ul>
+</div> 
+
+<div class="clearfix mg-auto overflow item-panel">
+ <ul class="clearfix item-list" id="buylist">        
+	<li class="line"></li>
+	<li class="more">
+	<a href="chgPassword.html" id="hrefCat1">修改密码</a> |
+	<a href="Javascript:logout();" id="hrefCat2">退出登录</a>
+	</li>
+	<li class="line"></li> 
+ </ul>
+</div> 
+   
+</div>
+
+<script type="text/javascript" src="js/function.js"></script>
+<script type="text/javascript" src="js/common.js"></script>
+<script type="text/javascript" src="js/index.js"></script>
+</body> 
+
+</html>

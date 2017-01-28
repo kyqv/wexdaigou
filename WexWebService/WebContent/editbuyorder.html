@@ -1,0 +1,139 @@
+<!DOCTYPE html >
+<html>
+<head>
+<title>100%正品gogogo</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0 , maximum-scale=1.0, user-scalable=0">
+
+<link rel="stylesheet" type="text/css" href="bootstrap/css/bootstrap.min.css">
+
+<link rel="stylesheet" type="text/css" href="css/apply.css">
+<link rel="stylesheet" type="text/css" href="css/share.css">
+<link rel="stylesheet" type="text/css" href="css/public.css">
+
+</head>
+
+<body>
+<div id="wrap" class="clearfix overflow mg-auto"> 
+   <div class="apply-nav overflow mg-auto area">
+        <div class="overflow clearfix apply-top border-bom">
+            <a href="index.html" class="apply-return">返回</a>
+            <h2>采购</h2>
+            <a href="Javascript:logout();" class="apply-sou">退出</a>
+            <a href="#" class="apply-pup">弹出</a>
+        </div>
+        <div class="i-icon mg-auto overflow area clearfix" id="apply-pup-icon">
+             <ul class="clearfix">
+		       	   <li><a href="buy.html" class="i-icon-tao"><img src="img/buy.png"></a></li>
+		           <li><a href="product.html" class="i-icon-game"><img src="img/product.png"></a></li>
+		           <li><a href="customer.html" class="i-icon-bizhi"><img src="img/customer.png"></a></li>
+		           <li><a href="report.html" class="i-icon-zhuan"><img src="img/report.png"></a></li>
+		     </ul>
+        </div>
+   </div> 
+   
+   <div class="crumbs">
+   	<a href="index.html">首页</a> > <a href="buy.html">采购</a> > <a href="buyorder.html?buyId=" id="hrefOrder">订单</a> > 编辑
+   </div>
+   
+  <div class="alert alert-danger alert-dismissable fade in" id="alertDg" style="display:none;">
+  	<button type="button" class="close" onclick="$('#alertDg').hide();">&times;</button>
+  	<span id="alertMsg"></span>
+  </div>
+  
+  <div class="clearfix swiper-container mg-auto overflow">
+ <ul class="clearfix detail-list">
+     <li>
+	 <b class="title">采购日期</b>
+     <input id="date" type="text" class="txtInfo" name="date"  value="" placeholder="" readonly>          
+	 </li>         
+    <li>
+	 <b class="title">微信号</b>
+     <input id="weixin" type="text" class="txtInfo" name="weixin"  value="" placeholder="" >      
+     <input id="buyPrice" type="hidden" class="txtInfo" name="buyPrice"  value="0" placeholder="" >        
+     <input id="sellPrice" type="hidden" class="txtInfo" name="sellPrice"  value="0" placeholder="" >        
+     <input id="cnt" type="hidden" class="txtInfo" name="cnt"  value="0" placeholder="" >        
+
+	 </li> 
+    <li>
+	 <b class="title">姓名</b>
+     <input id="name" type="text" class="txtInfo" name="name"  value="" placeholder="" >          
+	 </li> 	 
+    <li>
+	 <b class="title">电话</b>
+     <input id="mobile" type="text" class="txtInfo" name="mobile"  value="" placeholder="" OnKeyUp="value=value.replace(/[^\d]/ig,'')">          
+	 </li> 		 
+    <li>
+	 <b class="title">地址</b>
+     <input id="address" type="text" class="txtInfo" name="address"  value="" placeholder="" >          
+	 </li> 	 
+    <li style="border-bottom:0px;">
+	 <b class="title">状态</b>
+     <input id="status" type="text" class="txtInfo" name="status"  value="待采购" placeholder="" >          
+	 </li> 	 
+    <li>
+	 <b class="title"></b>
+	 <div class="btn-group" data-toggle="buttons" style="float:left;">
+  		<label class="btn btn-xs btn-danger"  onclick="$('#status').val('待采购');">
+    		<input type="radio" name="options" id="option1">待采购
+  		</label>
+  		<label class="btn btn-xs btn-danger" onclick="$('#status').val('已采购');">
+    		<input type="radio" name="options" id="option2">已采购
+  		</label>  		
+  		<label class="btn btn-xs btn-danger" onclick="$('#status').val('已发货');">
+    		<input type="radio" name="options" id="option2">已发货
+  		</label>
+	</div>
+	 </li> 	 
+ 	<li>
+	 <button type="button" class="btn btn-danger btn-block submitBtn" id="btnSubmit" onclick="edit();">提交</button>
+	 </li>	 
+ </ul>
+</div>   
+<br>
+<div class="i-tab-title">
+       <h2>点击选择已存在客户</h2>          
+</div>
+   <div class="i-sou mg-auto overflow">
+    <p class="clearfix">
+     <b class="i-sou-seek"></b>
+     <input id="searchTxt" type="text" class="txtInfo" name="searchTxt"  value="" placeholder="微信号,姓名,手机" >
+	  <i class="clear-txt"></i>
+    </p>
+    <a href="#" class="souBtn" id ="SearchOK" onclick="btnSearch();">搜索</a>
+  </div> 
+  
+  <div class="clearfix mg-auto overflow item-panel">
+
+ <ul class="item-list clearfix" id="cusList">        
+    <li class="head" id="cus-item">
+	<a href="Javascript:select('{customerId}');" class="clearfix">
+	   <div class="two main">
+	   		<div class="col1" id="cusName"><span class="glyphicon glyphicon-phone"></span> {customerName}</div><div class="col2" id="mobile">{mobile}</div>
+	   </div>
+	   <div class="one remark">{address}</div>
+  	 </a> 
+	 </li> 
+	 <li class="line"></li>
+     <li class="line"></li>
+	 <li class="more" id="more">
+	 <a class="clearfix morebtn" href="#" onclick="loadMore();">加载更多</a>
+	 </li>
+ </ul>
+</div>   
+ 
+</div>
+
+<script type="text/javascript" src="js/jquery.min.js"></script>
+<script type="text/javascript" src="js/jquery.cookie.js"></script>
+<script type="text/javascript" src="bootstrap/js/bootstrap.min.js"></script>
+
+<script type="text/javascript" src="js/function.js"></script>
+<script type="text/javascript" src="js/common.js"></script>
+<script type="text/javascript" src="js/label.js"></script>
+<script type="text/javascript" src="js/editbuyorder.js"></script>
+</body> 
+
+<script type="text/javascript" src="js/com.js"></script> 
+ 
+</html>
